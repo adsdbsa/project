@@ -1,0 +1,23 @@
+<h1 style="margin-top:5ch ;">Reading</h1>
+<div>
+
+    <table border='1' width='100%' style='border-collapse: collapse;'>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+
+        </tr>
+
+        <tr *ngFor="let user of users">
+            <td>{{ user.Id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.pwd }}</td>
+            <!-- <td> -->
+            <!-- <button (click)="deletePolicy(policy.id)">Delete</button> -->
+            <!-- <button (click)="selectUsers(users)">Update</button> -->
+            <!-- </td> -->
+        </tr>
+    </table>

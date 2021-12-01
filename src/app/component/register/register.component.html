@@ -1,0 +1,31 @@
+<h2 class="text-center" style="margin-top: 8ch;">Register</h2>
+<div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4 col-md-offset-5">
+        <div class="jumbotron">
+            <form [formGroup]="form" (ngSubmit)="reg_user()" autocomplete="off">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" formControlName="name" autocomplete="off" class="form-control input-sm" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" formControlName="email" autocomplete="off" class="form-control input-sm" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" name="Password" formControlName="pwd" autocomplete="off" class="form-control input-sm" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-success" style="background-color: rgb(11,98,224);">Register</button>
+            </form>
+        </div>
+    </div>
+    <div class="centainer" style="margin-left: 33.3%;">
+        <div class="jumbotron">
+            <form [formGroup]="form" (ngSubmit)="login_user()" autocomplete="off">
+                <br><button type="submit" class="btn btn-success" style="background-color: rgb(11,98,224);">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
